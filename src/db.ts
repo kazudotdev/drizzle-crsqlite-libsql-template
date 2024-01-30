@@ -5,6 +5,6 @@ const client = createClient({
   url: "http://localhost:8000",
 });
 
-const db = drizzle(client);
+const db = drizzle(client, { logger: true });
 
 export default db;
